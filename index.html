@@ -29,7 +29,6 @@
         </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="blue-waves"><path fill="#30ADE2" fill-opacity="1" d="M0,160L40,149.3C80,139,160,117,240,138.7C320,160,400,224,480,213.3C560,203,640,117,720,101.3C800,85,880,139,960,160C1040,181,1120,171,1200,154.7C1280,139,1360,117,1400,106.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
     </div>
-    
     <div class="bottomDiv">
         <div class="stars">
             <svg id="star1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#ffffff}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
@@ -53,22 +52,26 @@
                 <h2>Got a project in mind?</h2>
                 <p>Use the form to give me as much detail as possible and I’ll get back to you as soon as I can.</p>
             </div>
-            <div class="formRight">
-                <div class="top-two-form">
-                    <input type="text" placeholder="Name"> <input type="email" placeholder="Email Address">
+            <form method="post">
+                <div class="formRight">
+                    <div class="top-two-form">
+                        <input type="text" placeholder="Name" id="clientName" required> <input type="email" placeholder="Email Address" id="clientEmail" required>
+                    </div>
+                    <textarea name="" id="details" cols="50" rows="7" placeholder="Details about your project" required></textarea><br>
+                    <div class="bottom-two-form">
+                        <input type="text" placeholder="Budget range" id="clientBudget" required> <input type="text" placeholder="Timeline" id="clientTimeline" required>
+                    </div>
                 </div>
-                <textarea name="" id="details" cols="50" rows="7" placeholder="Details about your project"></textarea><br>
-                <div class="bottom-two-form">
-                    <input type="text" placeholder="Budget range"> <input type="text" placeholder="Timeline">
-                </div>
-            </div>
+            </form>
         </div>
-        <a href="" target="_blank" id="bottomButton">Send message<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></a>
+        <a href="#" id="bottomButton">Send message<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></a>
     </div>
     <div class="dune">
         <svg id="dunes"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path id="dunee" fill="#0099ff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,160C384,139,480,117,576,117.3C672,117,768,139,864,160C960,181,1056,203,1152,192C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="contact.js"></script>
 </body>
 </html>
+
